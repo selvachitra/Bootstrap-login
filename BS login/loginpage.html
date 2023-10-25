@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-4 col-md-4 well">
+                <h2 class="text-center text-primary ">Login or Signup</h2><br>
+                <div class="text-inline">
+                    <button class="btn btn-lg btn-primary btn-block">Login with Ben10 book </button>
+                    <center>
+                        <h6>OR</h6>
+                    </center>
+                    <button class="btn btn-lg btn-danger btn-block">Login with Ben10 @Gmail</button>
+                </div>
+                <br>
+                <form action="" method="POST">
+                    <div class="form-group">
+                        <div class="form-group input-group">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-user"></span>
+                            </span>
+                            <input type="email" class="form-control" id="email" placeholder="Enter ben 10 email"
+                                name="email">
+                        </div>
+                    </div><br>
+                    <div class="form-group">
+                        <div class="form-group input-group">
+                            <span class=input-group-addon>
+                                <span class="glyphicon glyphicon-lock"></span>
+                            </span>
+                            <input type="text" class="form-control" id="password" placeholder="Enter ben 10 password"
+                                name="pwd">
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="remember">Remember me</label>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" name="Submit" class="btn btn-success btn-block">Login</button>
+                        </div>
+                        <div class="login-form">
+                            <p class="text-right"><a href="#">Ben 10 help?</a></p>
+                        </div>
+                        <div class="col-lg-8">
+                            <img class="img-responsive"
+                                src="data:image/jpeg;base64,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"
+                                alt="logo" name="logo">
+                            <br><br>
+                            <div class="login-form">
+                                <p>Already have an account? <a href="#">Ben 10 Login here</a></p>
+                                <p>New user? <a href="#">Ben 10 create new account</a></p>
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
